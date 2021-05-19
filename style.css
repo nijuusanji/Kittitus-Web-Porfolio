@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sigmar+One&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.navbar {
+    position: relative;
+}
+
+nav{
+    background-image: url("./assets/images/navbar.png");
+    width: 1600px;
+    margin: -5px 0 0 160px;
+    display:flex;
+    justify-content:space-between;
+    background-repeat: no-repeat;
+    height: 90px;
+}
+
+.ui-text{
+    width: 600px;
+}
+
+
+.ui-text p, .ui-text img{
+    position: absolute;
+    padding: 10px 0 0 180px;
+}
+
+.ui-text p {
+    font-family: 'Sigmar One', cursive;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color:#F8EFBA;
+    -webkit-text-stroke: 2px #793618;
+    margin: 30px 0 0 60px;
+}
+
+ul{
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    list-style-type: none;
+    width: 400px;
+} 
+
+li{
+    margin: auto;
+    padding: 10px;
+    background-color: brown;
+}
+
+li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.welcome-section {
+    margin: 0 200px;
+
+}
+
+.hello {
+    display: flex;
+    height: 90vh;
+}
+
+.conA{
+    width: 600px;
+    margin:-100px auto auto auto;
+}
+
+.uiwelcome{
+    width: 600px;
+    height: 700px;
+    background-image:url('./assets/images/uiwelcomeSection.png');
+}
+
+.name-container{
+    width: 600px;
+    display:flex;
+    justify-content:center;
+    margin: auto;
+    text-align: center;   
+    padding-top:420px; 
+}
+
+
+.myname{
+    font-family: 'Sigmar One', cursive;
+    font-weight: 700;
+    font-size: 5rem;
+    color:#F8EFBA;
+    -webkit-text-stroke: 2px #793618
+}
+
+
+
+.position {
+    width: 600px;
+    padding-top:40px;
+    text-align: center;
+}
+
+.myPostion{
+    font-family: 'Sigmar One', cursive;
+    font-size: 2rem;
+    color:#F8EFBA;
+    -webkit-text-stroke: 3px #793618
+}
+
+
+.conB{
+    width: 700px;
+    height: 700px;
+    perspective: 1000px;
+    margin:100px 0 0 150px;
+}
+
+.flip-inner{
+    position: relative;
+    width: 700px;
+    height: 700px;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.conB:hover .flip-inner{
+    cursor: default;
+    transform: rotateY(180deg);
+}
+
+.flipfront, .flipback{
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.textflip{
+    width: 700px;
+    position:absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    font-family: 'Sigmar One', cursive;
+    color:#F8EFBA;
+    -webkit-text-stroke: 4px #793618;
+    padding-top: 80px;
+    font-size: 60px;
+}
+
+
+.profile{
+    width: 700px;
+    border-radius: 50%;
+    border:10px solid black;
+}
+
+.flipback{
+    transform: rotateY(180deg);
+}
+
+.textflipBack{
+    position:absolute;
+    padding-top:50px;
+    font-family: 'Sigmar One', cursive;
+    font-size: 2rem;
+    color:#F8EFBA;
+    -webkit-text-stroke: 3px #793618
+}
+
+.textflipBack .titleflip{
+    font-size:4rem;
+}
+
+.infoflip{
+    padding-top:20px
+}
+.intro-project{
+    text-align: center;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding:50px 200px;
+}
+
+.title-container{
+    padding:40px;
+    grid-row:1;
+    grid-column: 1/3;
+}
+
+
+.Title{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Sigmar One', cursive;
+    font-size: 30px;
+}
+
+.bton {
+    width: 600px;
+    height: 120px;
+    border-radius: 15px;
+    margin: 20px auto;
+    border: 0px;
+}
+
+.unity-button {
+    background-image: url('./assets/images/button_game.png');
+}
+
+.animate-button{
+    background-image: url('./assets/images/button_animate.png');
+}
+
+.art-button{
+    background-image: url('./assets/images/graphicArt3D_button.png');
+}
+
+.codepen-button{
+    background-image: url('./assets/images/codepen_button.png');
+}
+
+.fcc-button{
+    background-image: url('./assets/images/button_FreeCodeCamp.png');
+}
+
+
+.illustrator{
+    height: 100vh;
+    background-color: cornsilk;
+}
+
+.illustrator .picture-container .imgIllus{
+    width: 300px;
+
+}
