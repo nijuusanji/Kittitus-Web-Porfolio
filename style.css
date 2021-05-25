@@ -14,7 +14,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #3C3B3F;  
+    /* background: #3C3B3F;   */
     /* background: -webkit-linear-gradient(to bottom, #605C3C, #3C3B3F);  
     background: linear-gradient(to bottom, #605C3C, #3C3B3F);  */
     /* background: #44A08D; */
@@ -258,7 +258,7 @@ li a:hover{
 .contact-bg{
     background:url("./assets/images/contactUi.png");
     padding: 80px;
-    height: 800px;
+    height: 790px;
     text-align: center;
 }
 
@@ -274,3 +274,8 @@ li a:hover{
     text-align: center;
 } */
 
+/* Work Section */
+
+.work-container{
+    display:grid;
+}

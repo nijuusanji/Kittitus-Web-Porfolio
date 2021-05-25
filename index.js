@@ -1,6 +1,5 @@
 var  shotSrc = "./assets/images/";
 
-const illusImg = ["SB_1.jpg","SB_2.jpg","SB_3.jpg","SB_4.jpg","SB_5.jpg","SB_6.jpg","SB_7.jpg"]
 var countPage = 1;
 
 function App() {
@@ -68,7 +67,10 @@ function Works(){
     return (
         <div className="work-container">
             <div className="works-selector">
-                <div>Hello world</div>
+                <div>Games</div>
+                <div>Web</div>
+                <div>Illustration</div>
+                <div>Animation</div>
             </div>
             <div className="work-side">
 
