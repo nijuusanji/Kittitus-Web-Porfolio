@@ -278,4 +278,22 @@ li a:hover{
 
 .work-container{
     display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    margin: auto;
+}
+
+.item{
+    /* width: 400px;
+    height: 250px; */
+    margin: 40px 50px;
+}
+
+.item img{
+    width: 100%;
+}
+
+.item .item-title{
+    text-align: center;
+    padding-top: 10px;
 }

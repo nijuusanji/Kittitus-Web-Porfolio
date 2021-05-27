@@ -66,14 +66,49 @@ function Contact(){
 function Works(){
     return (
         <div className="work-container">
-            <div className="works-selector">
-                <div>Games</div>
-                <div>Web</div>
-                <div>Illustration</div>
-                <div>Animation</div>
+            <div class="item">
+                <img alt="hello" src="./assets/images/nsc3.jpeg"></img>
+                <div class="item-title">Mathematic Game for middle school</div>
             </div>
-            <div className="work-side">
-
+            <div class="item">
+                <img alt="hello" src="./assets/images/nsc1.jpeg"></img>
+                <div class="item-title">Mathematic Game for middle school</div>
+            </div>
+            <div class="item">
+                <img alt="hello" src="./assets/images/sb-1.jpg"></img>
+                <div class="item-title">Mathematic Game for middle school</div>
+            </div>
+            <div class="item">
+                <img alt="hello" src="./assets/images/nsc1.jpeg"></img>
+                <div class="item-title">Mathematic Game for middle school</div>
+            </div>
+            <div class="item">
+                <img alt="hello" src="./assets/images/nsc1.jpeg"></img>
+                <div class="item-title">Mathematic Game for middle school</div>
+            </div>
+            <div class="item">
+                <img alt="hello" src="./assets/images/nsc1.jpeg"></img>
+                <div class="item-title">Mathematic Game for middle school</div>
+            </div>
+            <div class="item">
+                <img alt="hello" src="./assets/images/nsc1.jpeg"></img>
+                <div class="item-title">Mathematic Game for middle school</div>
+            </div>
+            <div class="item">
+                <img alt="hello" src="./assets/images/nsc1.jpeg"></img>
+                <div class="item-title">Mathematic Game for middle school</div>
+            </div>
+            <div class="item">
+                <img alt="hello" src="./assets/images/nsc1.jpeg"></img>
+                <div class="item-title">Mathematic Game for middle school</div>
+            </div>
+            <div class="item">
+                <img alt="hello" src="./assets/images/nsc1.jpeg"></img>
+                <div class="item-title">Mathematic Game for middle school</div>
+            </div>
+            <div class="item">
+                <img alt="hello" src="./assets/images/nsc1.jpeg"></img>
+                <div class="item-title">Mathematic Game for middle school</div>
             </div>
         </div>
     )
