@@ -91,7 +91,7 @@ function Works(){
             </div>
             <div className="item">
                 <div>{sbCount+1}/7</div>
-                <img alt="hello" src={shotSrc+"sb-1.png"}></img>
+                <img className="sb-pic" alt="sb-pic" src={a}></img>
                 <button className="up-page" onClick={() => Sbpic("up")}>up</button>
                 <button className="down-page" onClick={() => Sbpic("down")}>down</button>
                 <div className="item-title">Illustrator</div>
