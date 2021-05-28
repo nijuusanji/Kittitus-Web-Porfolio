@@ -1,5 +1,8 @@
 var  shotSrc = "./assets/images/";
 
+
+var sbPics = ["sb-1.png","sb-2.png","sb-3.png","sb-4.png","sb-5.png","sb-6.png","sb-7.png"];
+var sbCount = 0;
 var countPage = 1;
 
 function App() {
@@ -64,52 +67,36 @@ function Contact(){
 }
 
 function Works(){
+    const [a,setA] = React.useState(shotSrc+"sb-1.png")
+
+    const Sbpic = (upOrDown) => {
+        if(upOrDown == "up" && sbCount<6){
+            sbCount++;
+        }
+        if(upOrDown =="down" && sbCount>0){
+            sbCount--;
+        }
+        setA(shotSrc+sbPics[sbCount]);
+    }
+    
     return (
         <div className="work-container">
-            <div class="item">
+            <div className="item">
                 <img alt="hello" src="./assets/images/nsc3.jpeg"></img>
-                <div class="item-title">Mathematic Game for middle school</div>
+                <div className="item-title">Mathematic Game for middle school</div>
             </div>
-            <div class="item">
+            <div className="item">
                 <img alt="hello" src="./assets/images/nsc1.jpeg"></img>
-                <div class="item-title">Mathematic Game for middle school</div>
+                <div className="item-title">Mathematic Game for middle school</div>
             </div>
-            <div class="item">
-                <img alt="hello" src="./assets/images/sb-1.jpg"></img>
-                <div class="item-title">Mathematic Game for middle school</div>
+            <div className="item">
+                <div>{sbCount+1}/7</div>
+                <img alt="hello" src={shotSrc+"sb-1.png"}></img>
+                <button className="up-page" onClick={() => Sbpic("up")}>up</button>
+                <button className="down-page" onClick={() => Sbpic("down")}>down</button>
+                <div className="item-title">Illustrator</div>
             </div>
-            <div class="item">
-                <img alt="hello" src="./assets/images/nsc1.jpeg"></img>
-                <div class="item-title">Mathematic Game for middle school</div>
-            </div>
-            <div class="item">
-                <img alt="hello" src="./assets/images/nsc1.jpeg"></img>
-                <div class="item-title">Mathematic Game for middle school</div>
-            </div>
-            <div class="item">
-                <img alt="hello" src="./assets/images/nsc1.jpeg"></img>
-                <div class="item-title">Mathematic Game for middle school</div>
-            </div>
-            <div class="item">
-                <img alt="hello" src="./assets/images/nsc1.jpeg"></img>
-                <div class="item-title">Mathematic Game for middle school</div>
-            </div>
-            <div class="item">
-                <img alt="hello" src="./assets/images/nsc1.jpeg"></img>
-                <div class="item-title">Mathematic Game for middle school</div>
-            </div>
-            <div class="item">
-                <img alt="hello" src="./assets/images/nsc1.jpeg"></img>
-                <div class="item-title">Mathematic Game for middle school</div>
-            </div>
-            <div class="item">
-                <img alt="hello" src="./assets/images/nsc1.jpeg"></img>
-                <div class="item-title">Mathematic Game for middle school</div>
-            </div>
-            <div class="item">
-                <img alt="hello" src="./assets/images/nsc1.jpeg"></img>
-                <div class="item-title">Mathematic Game for middle school</div>
-            </div>
+
         </div>
     )
 }
