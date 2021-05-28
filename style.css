@@ -287,8 +287,6 @@ li a:hover{
     margin: 40px 50px;
 }
 
-
-
 .item img{
     width: 100%;
 }
@@ -296,4 +294,13 @@ li a:hover{
 .item .item-title{
     text-align: center;
     padding-top: 10px;
+}
+
+
+.sb-pic-bg{
+    width: auto;    
+}
+
+.sb-pic{
+    position:absolute;
 }
